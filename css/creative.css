@@ -66,11 +66,8 @@ section {
   background: #222222;
   text-shadow: none; }
 
-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
+.image-tile {
+  width: 80%; }
 
 img::selection {
   color: white;
