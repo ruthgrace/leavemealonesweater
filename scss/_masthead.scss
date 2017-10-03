@@ -5,8 +5,18 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url('../img/bb_sweater.gif');
-  background-position: center;
+  #video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .fill-width {
+      width: 100%;
+    }
+  }
   @include background-cover;
   .header-content {
     position: relative;
@@ -37,7 +47,7 @@ header.masthead {
     min-height: 600px;
     .header-content {
       position: absolute;
-      top: 50%;
+      top: 67%;
       padding: 0 50px;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);

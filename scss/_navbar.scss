@@ -53,9 +53,9 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out(white, .3);
+      color: fade-out($gray-darker, .3);
       &:hover {
-        color: white;
+        text-decoration: underline;
       }
     }
     &.navbar-shrink {
@@ -66,14 +66,14 @@
         color: $theme-primary;
         &:focus,
         &:hover {
-          color: darken($theme-primary, .1);
+          color: fade-out($gray-darker, .55);
         }
       }
       .navbar-nav > li.nav-item > a.nav-link,
       .navbar-nav > li.nav-item > a.nav-link:focus {
         color: $gray-darker;
         &:hover {
-          color: $theme-primary;
+          color: fade-out($gray-darker, .55);
         }
       }
     }
