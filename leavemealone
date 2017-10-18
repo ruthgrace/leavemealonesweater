@@ -31,7 +31,6 @@ server {
 }
 
 server {
-        more_set_headers 'Server: my-server';
         listen 443 ssl;
 	server_name leavemealonesweater.com www.leavemealonesweater.com;
         ssl_certificate /etc/letsencrypt/live/leavemealonesweater.com/fullchain.pem;
@@ -39,8 +38,8 @@ server {
 
         location / {
             root /var/www/leavemealonesweater;
-            index index.html;
-	    more_set_headers -s 200 "Vary: " "Accept-Encoding, User-Agent";
+	    index index.html;
+	    add_header Vary "User-Agent";
         }
 
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
