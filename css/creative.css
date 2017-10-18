@@ -182,6 +182,11 @@ header.masthead {
       font-weight: 300;
       margin-bottom: 50px;
       color: rgba(255, 255, 255, 0.7); }
+  @media (max-device-width: 600px) {
+    header.masthead #video-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
   @media (min-width: 768px) {
     header.masthead {
       height: 100%;
