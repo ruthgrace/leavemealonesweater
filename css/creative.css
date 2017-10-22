@@ -150,7 +150,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../img/lma_thumbnail_mobile.jpg");
+  background-image: url("../img/lma_thumbnail_mobile_whitespace.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
