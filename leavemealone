@@ -33,8 +33,8 @@ server {
 server {
         listen 443 ssl;
 	server_name leavemealonesweater.com www.leavemealonesweater.com;
-        ssl_certificate /etc/letsencrypt/live/leavemealonesweater.com/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/leavemealonesweater.com/privkey.pem;
+        ssl_certificate /etc/letsencrypt/live/www.leavemealonesweater.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/www.leavemealonesweater.com/privkey.pem;
 
         location / {
             root /var/www/leavemealonesweater;
