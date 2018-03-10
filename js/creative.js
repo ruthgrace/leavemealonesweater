@@ -1,3 +1,8 @@
+function padToTwo(number) {
+  if (number<=99) { number = ("0"+number).slice(-2); }
+  return number;
+}
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -67,5 +72,24 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+
+  var targetDate = Date.parse('2018-03-28')
+  var targetElement = $('#daycount')
+  function updateDate() {
+    var diff = targetDate - new Date()
+    var seconds = diff / 1000;
+    var minutes = seconds / 60;
+    var hours = minutes / 60;
+    var days = hours / 24;
+    //    var times = [
+    //      padToTwo(Math.floor(days)),
+    //      padToTwo(Math.floor(hours)%24),
+    //      padToTwo(Math.floor(minutes)%60),
+    //      padToTwo(Math.floor(seconds)%60),
+    //    ]
+    targetElement.text(Math.ceil(days))
+  }
+  updateDate()
+  setInterval(updateDate, 1000)
 
 })(jQuery); // End of use strict

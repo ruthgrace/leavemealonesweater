@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Createive v4.0.0-beta (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 body,
@@ -180,8 +180,11 @@ header.masthead {
     header.masthead .header-content .header-content-inner p {
       font-size: 16px;
       font-weight: 300;
-      margin-bottom: 50px;
       color: rgba(255, 255, 255, 0.7); }
+    header.masthead .header-content .header-content-right {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: rgba(0, 0, 0, 0.5); }
   @media (max-device-width: 600px) {
     header.masthead #video-container {
       display: flex;
@@ -193,13 +196,12 @@ header.masthead {
       min-height: 600px; }
       header.masthead .header-content {
         position: absolute;
-        top: 67%;
+        top: 50%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
         header.masthead .header-content .header-content-inner {
-          max-width: 1000px;
           margin-right: auto;
           margin-left: auto; }
           header.masthead .header-content .header-content-inner h1 {
