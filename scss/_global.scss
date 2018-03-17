@@ -93,3 +93,20 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: $gray-darker;
 }
+
+
+@media(max-width: 992px) {
+  .btn-splash-subscribe {
+    font-size: 0.9rem;
+  }
+}
+
+.btn-splash-subscribe {
+  color: black;
+  background-color: white;
+}
+
+.btn-splash-subscribe:hover {
+  color: black;
+  transform: scale(1.1);
+}

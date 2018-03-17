@@ -87,7 +87,7 @@ function padToTwo(number) {
     //      padToTwo(Math.floor(minutes)%60),
     //      padToTwo(Math.floor(seconds)%60),
     //    ]
-    targetElement.text(Math.ceil(days))
+    targetElement.text(Math.ceil(days) + 1)
   }
   updateDate()
   setInterval(updateDate, 1000)
