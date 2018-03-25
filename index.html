@@ -30,6 +30,25 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '428107380936594');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=428107380936594&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
   </head>
 
   <body id="page-top">
@@ -56,8 +75,8 @@
 
     <header class="masthead">
       <div id="video-container" class="d-none d-md-block">
-        <video autoplay loop class="fill-width" poster="img/lma_thumbnail.jpg">
-          <source src="img/ruthmed.mp4" type="video/mp4" />
+        <video autoplay loop class="fill-width" poster="img/nimmi_juice_1200x628.jpg">
+          <source src="img/tola-couch-going-down-andup8ss.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="header-content">
@@ -177,8 +196,8 @@
             	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="width:300px">
             </div>
             	<div id="mce-responses" class="clear">
-            		<div class="response" id="mce-error-response" style="display:none"></div>
-            		<div class="response" id="mce-success-response" style="display:none"></div>
+            		<div class="response" id="mce-error-response" style="display:none; color:white;"></div>
+            		<div class="response" id="mce-success-response" style="display:none; color:white;"></div>
             	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_794111d403e657f471db4a0d8_bbf458deab" tabindex="-1" value=""></div>
                 <br>
@@ -199,6 +218,15 @@
 	<p class="text-white">Photos courtesy of <a class="text-white" href="https://www.betabrand.com/">Betabrand</a></p>
       </div>
     </section>
+
+    <script type='text/javascript'>
+      $('#mc-embedded-subscribe-form').submit(
+        function(ev) {
+          ev.preventDefault(); // to stop the form from submitting
+          fbq('track', 'Lead');
+          this.submit(); // If all the validations succeeded
+        });
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
