@@ -6,6 +6,9 @@ header.masthead {
   text-align: center;
   color: white;
   background-image: url('../img/nimmi_juice_mobile_crop_long.jpg');
+  @media (min-device-width: 768px) {
+    background-image: url('../img/tola-couch.jpg');
+  }
   #video-container {
     position: absolute;
     top: 0%;

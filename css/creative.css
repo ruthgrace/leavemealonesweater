@@ -168,6 +168,9 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media (min-device-width: 768px) {
+    header.masthead {
+      background-image: url("../img/tola-couch.jpg"); } }
   header.masthead #video-container {
     position: absolute;
     top: 0%;
