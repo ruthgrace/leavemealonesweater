@@ -38,7 +38,8 @@ server {
 
         location / {
             root /var/www/leavemealonesweater;
-	    index index.html;
+            try_files  $uri $uri.html $uri/index.html index.html;
+	    # index index.html;
 	    add_header Vary "User-Agent";
         }
 
