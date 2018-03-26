@@ -24,7 +24,7 @@ a {
   @include transition-all;
   &:focus,
   &:hover {
-    color: darken($theme-primary, .1);
+    color: darken($theme-primary, 0.1);
   }
 }
 
@@ -53,7 +53,7 @@ p {
 }
 
 .text-faded {
-  color: fade-out(white, .3);
+  color: fade-out(white, 0.3);
 }
 
 section {
@@ -77,7 +77,7 @@ section {
 }
 
 .image-tile {
-    width:80%;
+  width: 80%;
 }
 
 img::selection {
@@ -94,8 +94,7 @@ body {
   -webkit-tap-highlight-color: $gray-darker;
 }
 
-
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .btn-splash-subscribe {
     font-size: 0.8rem;
   }
