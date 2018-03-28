@@ -72,7 +72,7 @@ function padToTwo(number) {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-
+  /* kickstarter countdown
   var targetDate = Date.parse('2018-03-28')
   var targetElement = $('#daycount')
   function updateDate() {
@@ -91,5 +91,5 @@ function padToTwo(number) {
   }
   updateDate()
   setInterval(updateDate, 1000)
-
+*/
 })(jQuery); // End of use strict
