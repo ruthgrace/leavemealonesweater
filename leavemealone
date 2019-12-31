@@ -17,6 +17,16 @@
 # PUT THIS IN /etc/nginx/sites-available and /etc/nginx/sites-enabled
 
 server {
+    if ($host = www.leavemealonesweater.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    if ($host = leavemealonesweater.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
 	listen 80;
         listen [::]:80;
 	server_name leavemealonesweater.com www.leavemealonesweater.com;
@@ -28,13 +38,18 @@ server {
             return 301 https://$host$request_uri;
         }
 
+
+
+
+
 }
 
 server {
         listen 443 ssl;
 	server_name leavemealonesweater.com www.leavemealonesweater.com;
-        ssl_certificate /etc/letsencrypt/live/www.leavemealonesweater.com/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/www.leavemealonesweater.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/www.leavemealonesweater.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/www.leavemealonesweater.com/privkey.pem; # managed by Certbot
+
 
         location / {
             root /var/www/leavemealonesweater;
@@ -60,6 +75,8 @@ server {
 	#location ~ /\.ht {
 	#	deny all;
 	#}
+
+
 }
 
 
